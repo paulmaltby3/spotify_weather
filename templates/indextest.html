@@ -1,0 +1,39 @@
+{% include 'header.html' %}
+
+    <div class="container">
+		<div class='jumbotron' style="background-color:#a8dadc">
+			<h1><u>Welcome</u></h1>
+
+			<p> On this website it shows the top 200 songs in groups of 10 depending on what the weather is in London. If the weather is clear it will show the top 10 songs, if the weather is rainy it will show the bottom 10 songs. If the weather is something else then it will show 10 random songs from the middle.</p>	
+		</div>
+	</div>
+
+	<div class="container">
+  		<h3 class=""> Because it's {{weather}} in London these are the songs.</h3>
+  	
+
+    <table class="table table-striped table-sm">
+              <thead>
+                <tr>
+                  <th>Position</th>
+                  <th>Track Name</th>
+                  <th>Artist</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for value in table %}
+                <tr>
+                  <td>{{ value[1] }}</td>
+                  <td>{{ value[2] }}</td>
+                  <td>{{ value[3] }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+
+	<img src="/static/images/blue_heart_200_a.png" alt="top 200 in a heart" width="250" height="250">
+
+	</div>
+
+{% include 'footer.html' %}
+

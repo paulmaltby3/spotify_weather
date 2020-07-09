@@ -1,0 +1,30 @@
+body {
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: verdana;
+}
+
+
+ {
+  background: pink;
+  width: 664px;
+  color: black;
+}
+
+  h1 {
+    font-size: 100px;
+}
+  h2 {
+    background: lightblue;
+    font-size: 50px;
+}
+  h3 {
+    font-size: 40px;
+}
+  p {
+    font-size: 30px;
+}
